@@ -1,0 +1,139 @@
+
+.App{
+  background-color: darkslategrey;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  margin-top: 60px;
+}
+
+
+.main{
+  padding: 20px;
+  display: block;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.style-header{
+  font-size: larger;
+  font-family: 'Monaco';
+  color: black;
+}
+
+.input-basic{
+  outline: none;
+  box-shadow: none;
+  text-shadow: none;
+  background-color: darkslategrey;
+  width: 240px;
+  height: 30px;
+  margin: auto;
+}
+
+.input-task{
+  margin-top: 70px;
+  margin-left: 25px;
+}
+
+.input-username{
+  margin-top: 30px; 
+}
+
+.input-password{
+  margin-top: 10px;
+}
+
+.login-button{
+  margin: auto;
+  margin-top: 30px;
+  width: 140px;
+  height: 50px;
+  background-color: grey;
+}
+
+.logout-button{
+  margin-top: 80px;
+}
+
+.visible{
+  visibility: visible;
+}
+
+.hidden{
+  visibility: hidden;
+}
+
+.error-message{
+  font-size: 11px;
+  margin-top: 20px;
+  color: lightgrey;
+  text-decoration: underline;
+}
+
+.logged-div{
+  color: red;
+}
+
+.remove-task-button{
+  width: 30px;
+  height: 30px;
+  color: darkslategrey;
+  border-style: none;
+  margin-right: 5px;
+  margin-top: 5px;
+  border-radius: 50px;
+  background-color: grey;
+}
+
+.task-list-div{
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  margin-top: 60px;
+  background-color: darkslategrey;
+}
+
+.table-row{
+  width: 500px;
+  font-size: xx-large;
+  height: fit-content;
+}
+
+.new-task-button{
+  border-style: none;
+  margin-top: 20px;
+  margin-left: 170px;
+  background-color: grey;
+  margin-bottom: 20px;
+  width: 100px;
+  height: 40px;
+}
+
+.button-logout{
+  border-style: none;
+  background-color: grey;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  width: 100px;
+  height: 40px;
+}
+
+.add-task-button{
+  border-style: none;
+  margin-left: 40px;
+  margin-top: 60px;
+  width: 80px;
+  height: 40px;
+  background-color: grey;
+}
+
+.go-to-button{ 
+  border-style: none;
+  margin-left: 105px;
+  margin-top: 10px;
+  width: 80px;
+  height: 40px;
+  background-color: grey;
+}
