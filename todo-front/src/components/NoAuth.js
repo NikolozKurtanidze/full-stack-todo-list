@@ -6,7 +6,7 @@ function NoAuth(props) {
   let location = useLocation();
 
   if (auth == 'true')
-    return <Navigate to="/login" state={{ from: location }} />
+    return <Navigate to="/tasks" state={{ from: location }} />
   return props.element;
 }
 

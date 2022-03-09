@@ -21,6 +21,10 @@ function LoginForm() {
     navigate('/tasks');
   }
 
+  const routeRegister = () => {
+    navigate('/register')
+  }
+
   return (
     <div className='main App'>
       <header className='style-header'>Login</header>
@@ -43,6 +47,7 @@ function LoginForm() {
           console.log(localStorage.getItem('isLogged'));
         });
       }}>Sign in</button>
+      <h1 id='register-link' className='error-message register' onClick={() => routeRegister()}>Register</h1>
       <h1 id='error' className='hidden error-message'>Invalid username or password!</h1>
     </div >
   )

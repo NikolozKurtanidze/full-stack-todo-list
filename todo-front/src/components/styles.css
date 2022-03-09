@@ -137,3 +137,15 @@
   height: 40px;
   background-color: grey;
 }
+
+.register{
+  font-size: larger;
+  color: grey;
+  -webkit-user-select: none;
+  cursor: pointer;
+}
+
+
+.go-to-login{
+  margin-left: 10px;
+}

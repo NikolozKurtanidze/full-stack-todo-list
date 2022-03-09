@@ -21,4 +21,10 @@ public class UserController {
     boolean checkUser(@RequestBody(required = true) User user){
         return userService.checkUser(user.getUsername(), user.getPwd());
     }
+
+    //WORKING
+    @PostMapping("/register")
+    void registerUser(@RequestBody(required = true) User user){
+        userService.addUser(user.getUsername(), user.getPwd());
+    }
 }

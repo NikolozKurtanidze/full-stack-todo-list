@@ -1,5 +1,6 @@
 package com.todoapp.todolist.service;
 
+import com.todoapp.todolist.entity.User;
 import com.todoapp.todolist.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -23,5 +24,13 @@ public class UserService {
                 .findFirst()
                 .get()
                 .getUserId();
+    }
+
+    public void addUser(String username, String pwd) {
+        userRepository.save(
+                User.builder()
+                .username(username)
+                .pwd(pwd)
+                .build());
     }
 }

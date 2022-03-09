@@ -6,6 +6,7 @@ import RequireAuth from "./components/RequireAuth";
 import NoAuth from "./components/NoAuth";
 import TaskListForm from "./components/TaskListForm";
 import AddTaskForm from "./components/AddTaskForm";
+import RegistrationForm from "./components/RegistrationForm";
 
 function App() {
   localStorage.setItem('isLogged', 'false');
@@ -13,6 +14,7 @@ function App() {
     <div>
       <Routes>
         <Route path="/" element={<Navigate to="/login" />} />
+        <Route path="/register" element={<NoAuth element={<RegistrationForm />} />} />
         <Route path="/addtask" exact element={<RequireAuth element={<AddTaskForm></AddTaskForm>} />} />
         <Route path="/login" exact element={<NoAuth element={<LoginForm />} />} />
         <Route path="/tasks" exact element={<RequireAuth element={<TaskListForm />} />} />
